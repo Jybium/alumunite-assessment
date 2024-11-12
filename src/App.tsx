@@ -13,7 +13,7 @@ const App: React.FC = () => (
       <Routes>
         <Route path="/" element={<UserTable />} />
         <Route path="/add-user" element={<AddUserForm />} />
-        <Route path="/manage-user" element={<ManageUserForm />} />
+        <Route path="/manage-users" element={<ManageUserForm />} />
       </Routes>
     </div>
   </Router>
