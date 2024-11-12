@@ -191,4 +191,5 @@ Please follow the guideline when contributing.
 ---
 
 ## Deployment
-This application is deployed on vercel and it can be accessed via this link ()
+
+This application is deployed on vercel and it can be accessed via this link [https://alumunite-assessment.vercel.app/](https://alumunite-assessment.vercel.app).
