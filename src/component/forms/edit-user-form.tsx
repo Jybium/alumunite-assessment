@@ -90,7 +90,7 @@ const EditUserForm: React.FC<Props> = ({ user, onUpdate, onCancel }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4 p-6 rounded-lg shadow-md max-w-xl mt-8">
       <div>
         <label className="block font-bold">Name</label>
         <input

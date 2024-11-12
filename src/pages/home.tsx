@@ -25,7 +25,7 @@ const Home = () => {
             </div>
 
             {isCardView ? (
-                <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 p-3 lg:p-6">
+                <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 p-3 lg:p-6">
                     {users.map(user => (
                         <UserProfileCard key={user.id} user={user} />
                     ))}
