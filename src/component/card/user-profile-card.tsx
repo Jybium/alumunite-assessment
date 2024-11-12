@@ -6,7 +6,7 @@ interface Props {
 }
 
 const UserProfileCard: React.FC<Props> = ({ user }) => (
-  <div className="user-card">
+  <div className="">
     <img src={user.profilePhoto} alt={`${user.name}'s profile`} />
     <h2>{user.name}</h2>
     <p>{user.email}</p>

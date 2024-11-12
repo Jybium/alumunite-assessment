@@ -6,7 +6,7 @@ const Home = () => {
   const users = getUsers();
   
   return (
-    <div>
+    <div className='w-full'>
       {users.map(user => (
         <UserProfileCard key={user.id} user={user} />
       ))}
