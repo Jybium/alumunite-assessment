@@ -4,7 +4,7 @@ import { User } from '../types/user';
 const initializeMockData = () => {
   if (!localStorage.getItem('users')) {
     const mockUsers: User[] = [
-      { id: '1', name: 'John Doe', email: 'john@example.com', role: 'Admin', status: 'Active', profilePhoto: '' }
+      { id: '1', name: 'John Doe', email: 'john@example.com', role: 'Admin', status: 'Active', profilePhoto: 'https://r2.starryai.com/results/1032196707/9f19cd2a-0710-4248-a6e5-be9d5dd72e1b.webp' }
     ];
     localStorage.setItem('users', JSON.stringify(mockUsers));
   }

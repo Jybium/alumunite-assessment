@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Input from '../common/input';
-import { User } from '../../types/user';
 import { getUsers, addUser, convertImageToBase64 } from '../../services/user-service';
 
 const AddUserForm: React.FC = () => {
@@ -42,7 +41,7 @@ const AddUserForm: React.FC = () => {
 
         // If form is valid, add user to localStorage
         if (valid) {
-            const newUser: User = {
+            const newUser: any = {
                 ...formData,
                 id: (getUsers().length + 1).toString(), // Auto-generate ID
             };
