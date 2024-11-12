@@ -2,9 +2,9 @@
 export default {
   darkMode: ["class"],
   content: [
-    "./components/**/*.{js,jsx,ts,tsx}",
-    "./page/**/*.{js,jsx.ts,tsx}",
-    "./public/index.html",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
