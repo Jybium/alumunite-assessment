@@ -12,7 +12,7 @@ interface InputProps {
 }
 
 const Input: React.FC<InputProps> = ({ label, type = 'text', name, value, onChange, placeholder, error }) => (
-  <div className="mb-4">
+  <div className="mb-4 w-full">
     <label className="block text-gray-700 font-medium mb-1">{label}</label>
     <input
       type={type}

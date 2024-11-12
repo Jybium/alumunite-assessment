@@ -79,28 +79,34 @@ const AddUserForm: React.FC = () => {
         <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md max-w-xl mx-auto mt-8 space-y-4">
             <h2 className="text-2xl font-bold text-gray-900">Add New User</h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-3 gap-y-5">
+            <div className="space-y-5 lg:space-y-0 lg:flex lg:flex-wrap lg:gap-x-3 lg:gap-y-5">
+                {/* Name Input */}
+                <div className="w-full lg:w-[48%]">
+                    <Input
+                        label="Name"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Enter name"
+                        error={errors.name}
+                    />
+                </div>
 
-                <Input
-                    label="Name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Enter name"
-                    error={errors.name}
-                />
+                {/* Email Input */}
+                <div className="w-full lg:w-[48%]">
+                    <Input
+                        label="Email"
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        placeholder="Enter email"
+                        error={errors.email}
+                    />
+                </div>
 
-                <Input
-                    label="Email"
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="Enter email"
-                    error={errors.email}
-                />
-
-                <div>
+                {/* Role Selector */}
+                <div className="w-full lg:w-[48%]">
                     <label className="block text-gray-700 font-medium mb-1">Role</label>
                     <select
                         name="role"
@@ -114,7 +120,8 @@ const AddUserForm: React.FC = () => {
                     </select>
                 </div>
 
-                <div>
+                {/* Status Selector */}
+                <div className="w-full lg:w-[48%]">
                     <label className="block text-gray-700 font-medium mb-1">Status</label>
                     <select
                         name="status"
@@ -127,7 +134,8 @@ const AddUserForm: React.FC = () => {
                     </select>
                 </div>
 
-                <div className='col-span-2'>
+                {/* Profile Photo Upload */}
+                <div className="w-full">
                     <label className="block text-gray-700 font-medium mb-1">Profile Photo</label>
                     <input
                         type="file"
@@ -137,6 +145,7 @@ const AddUserForm: React.FC = () => {
                     />
                 </div>
             </div>
+
 
             <button type="submit" className="w-full py-2 bg-blue-300 hover:bg-blue-500 text-white font-bold rounded-lg">
                 Add User
