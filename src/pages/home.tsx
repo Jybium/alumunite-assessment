@@ -31,7 +31,7 @@ const Home = () => {
                     ))}
                 </div>
             ) : (
-                <div className="p-3 lg:p-6">
+                <div className="p-3 lg:p-6 w-full overflow-x-auto">
                     <UserTable users={users} />
                 </div>
             )}

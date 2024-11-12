@@ -9,7 +9,7 @@ import ManageUserForm from './pages/manage-user-page';
 const App: React.FC = () => (
   <Router>
     <Navbar />
-    <div className="container mx-auto p-4">
+    <div className="container mt-5 mx-auto">
       <Routes>
         <Route path="/" element={<UserTable />} />
         <Route path="/add-user" element={<AddUserForm />} />
