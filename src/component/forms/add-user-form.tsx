@@ -81,7 +81,7 @@ const AddUserForm: React.FC = () => {
 
             <div className="space-y-5 lg:space-y-0 lg:flex lg:flex-wrap lg:gap-x-3 lg:gap-y-5">
                 {/* Name Input */}
-                <div className="w-full lg:w-1/2">
+                <div className="w-full lg:w-[48%]">
                     <Input
                         label="Name"
                         name="name"
@@ -93,7 +93,7 @@ const AddUserForm: React.FC = () => {
                 </div>
 
                 {/* Email Input */}
-                <div className="w-full lg:w-1/2">
+                <div className="w-full lg:w-[48%]">
                     <Input
                         label="Email"
                         type="email"
@@ -106,7 +106,7 @@ const AddUserForm: React.FC = () => {
                 </div>
 
                 {/* Role Selector */}
-                <div className="w-full lg:w-1/2">
+                <div className="w-full lg:w-[48%]">
                     <label className="block text-gray-700 font-medium mb-1">Role</label>
                     <select
                         name="role"
@@ -121,7 +121,7 @@ const AddUserForm: React.FC = () => {
                 </div>
 
                 {/* Status Selector */}
-                <div className="w-full lg:w-1/2">
+                <div className="w-full lg:w-[48%]">
                     <label className="block text-gray-700 font-medium mb-1">Status</label>
                     <select
                         name="status"
